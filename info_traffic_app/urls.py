@@ -15,7 +15,9 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
+from components.ping.views import PingView
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('ping/', PingView.as_view()),
 ]

@@ -27,6 +27,7 @@ def create_traffic_alert(request):
         return JsonResponse(serializer.data, status=status.HTTP_201_CREATED)
     return JsonResponse(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
 
+
 @api_view(["GET", "OPTIONS"])
 def get_traffic_alert(request):
     data = TrafficAlert.objects.all()

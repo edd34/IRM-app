@@ -4,7 +4,9 @@ from django.db import models
 
 
 class TrafficAlert(models.Model):
-    UUID = models.UUIDField(unique=True, primary_key=True, default=uuid.uuid4, editable=False)  # make sure unique uuid
+    UUID = models.UUIDField(
+        unique=True, primary_key=True, default=uuid.uuid4, editable=False
+    )  # make sure unique uuid
     lat = models.DecimalField(max_digits=9, decimal_places=6)
     lon = models.DecimalField(max_digits=9, decimal_places=6)
     timestamp = models.DateTimeField(auto_now=True)  # use auto now

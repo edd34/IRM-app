@@ -1,8 +1,9 @@
+import uuid
 from django.db import models
 
 
 class TrafficAlert(models.Model):
-    UUID = models.UUIDField(unique=True)  # make sure unique uuid
+    UUID = models.UUIDField(unique=True, primary_key=True, default=uuid.uuid4, editable=False)  # make sure unique uuid
     lat = models.DecimalField(max_digits=9, decimal_places=6)
     lon = models.DecimalField(max_digits=9, decimal_places=6)
     timestamp = models.DateTimeField(auto_now=True)  # use auto now
@@ -16,4 +17,4 @@ class TrafficAlert(models.Model):
     report_description = models.CharField(
         max_length=150, blank=True, null=True
     )  # string : optional
-    reportByMunicipalityUser = models.BooleanField(null=False)
+    # reportByMunicipalityUser = models.BooleanField()

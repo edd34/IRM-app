@@ -1,17 +1,14 @@
-from django.shortcuts import render
-from components.traffic_alert.models import TrafficAlert
-from components.traffic_alert.serializers import CreateTrafficAlertSerializer
-from django.http import HttpResponse, JsonResponse
-from rest_framework import status
-
 from typing import OrderedDict
+
 from django.http import HttpResponse, JsonResponse
-from rest_framework.decorators import api_view
+from django.shortcuts import get_object_or_404, render
 from rest_framework import serializers, status
+from rest_framework.decorators import api_view, permission_classes
 from rest_framework.parsers import JSONParser
 from rest_framework.permissions import IsAuthenticated
-from rest_framework.decorators import permission_classes
-from django.shortcuts import get_object_or_404
+
+from components.traffic_alert.models import TrafficAlert
+from components.traffic_alert.serializers import CreateTrafficAlertSerializer
 
 
 @api_view(["POST", "OPTIONS"])

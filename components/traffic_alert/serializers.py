@@ -1,4 +1,5 @@
 from rest_framework import serializers
+
 from components.traffic_alert.models import TrafficAlert
 
 

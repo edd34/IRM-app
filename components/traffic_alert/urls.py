@@ -1,4 +1,5 @@
 from django.urls import path
+
 from components.traffic_alert import views
 
 urlpatterns = [

@@ -39,3 +39,27 @@ django
 Django DRF
 djoser
 django-mongo ?
+
+# Database schema
+
+ * Base class * 
+UUID # each alert will have a uuid
+Position LatLon # GPS coordinate
+Timestamp #unix timestamp
+localisation #
+city # le village
+municipality # la commune
+
+ * class Traffic Alert * 
+AlertType : see table
+AlterSubType : see table
+ReportDescription # string : optional
+reportRating # integer : user rank 1-6, higher = higher rank
+jamUUID # uuid : if alert is connected to a jam, jamUUID - optional
+reportByMunicipalityUser : boolean : optional
+
+
+
+## General information (inherit from Base class)
+
+# 

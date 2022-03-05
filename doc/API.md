@@ -71,3 +71,108 @@ Status code : 201
     "report_description": "gene"
 }
 ```
+## 2. Alert-Table component
+Description : this table will categorize types of alert. Front-end will use this table for getting alert type.
+
+**Data structure :**
+ * category : category of an alert
+ * alert_type : a type of an alert
+ * alert_subtype : a subtype of an alert
+
+---
+**Example of alert table :**
+
+*Caution : This alert table is not definitive and is provided for information only. *
+
+|Id|Catégorie|Type|Sous-Type|
+|--|-------- | -- | --------|
+|0 |Information|Manifestation|Parking fermé|
+|1 |Information|Manifestation|Mariage|
+|2 |Information|Manifestation|Manzaraka|
+|3 |Information|Manifestation|Marche|
+|4 |Information|Manifestation|Grève|
+|5 |Alerte|Embouteillage|Moyen|
+|6 |Alerte|Embouteillage|Intense|
+|7 |Information|Signalisation|Feux temporaire|
+|8 |Information|Chaussée|Chaussée rétrécie|
+|9 |Danger|Agression|Caillassage|
+|10|Danger|Chaussée|Arbre sur la chaussée|
+|11|Danger|Chaussée|Nid de poule|
+|12|Danger|Chaussée|Gravillon|
+|13|Danger|Accident|Accident|
+|14|Danger|Travaux|Travaux la chaussée|
+---
+
+### a. Get All Alert in Alert Table
+-     GET: /get-alert-table/
+
+Description : return a JSON containing all languages in the database
+Example : [http://localhost:8000/get-alert-table/](http://localhost:8000/get-alert-table/)
+
+Example of response :
+```json
+[
+    {
+        "id": 1,
+        "category": "Information",
+        "alert_type": "Manifestation",
+        "alert_subtype": "Parking fermé"
+    },
+    {
+        "id": 2,
+        "category": "Information",
+        "alert_type": "Manifestation",
+        "alert_subtype": "Mariage"
+    },
+    {
+        "id": 3,
+        "category": "Information",
+        "alert_type": "Manifestation",
+        "alert_subtype": "Manzaraka"
+    },
+    {
+        "id": 4,
+        "category": "Information",
+        "alert_type": "Manifestation",
+        "alert_subtype": "Marche"
+    },
+    {
+        "id": 5,
+        "category": "Information",
+        "alert_type": "Manifestation",
+        "alert_subtype": "Grève"
+    },
+    {
+        "id": 6,
+        "category": "Information",
+        "alert_type": "Signalisation",
+        "alert_subtype": "Feux temporaire"
+    }
+]
+```
+
+### b. Create an alert type in Alert Table
+
+-     POST: /add-alert-table/
+
+Description : return a JSON containing all languages in the database
+Example : [http://localhost:8000/add-alert-table/](http://localhost:8000/add-alert-table/)
+
+Example of json body :
+```json
+{
+    "category":"Information",
+    "alert_type":"Signalisation",
+    "alert_subtype":"Feux temporaire"
+}
+```
+
+Example of response :
+```json
+Status code : 201
+{
+    "category": "Information",
+    "alert_type": "Signalisation",
+    "alert_subtype": "Feux temporaire"
+}
+```

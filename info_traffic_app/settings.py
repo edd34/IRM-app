@@ -39,7 +39,8 @@ INSTALLED_APPS = [
     "django.contrib.staticfiles",
     "components.traffic_alert",
     "components.alert_table",
-    "components.localisation"
+    "components.localisation",
+    "components.alert_poll"
 ]
 
 MIDDLEWARE = [

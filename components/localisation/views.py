@@ -1,10 +1,12 @@
 from django.http import HttpResponse, JsonResponse
-from rest_framework.decorators import api_view, permission_classes
 from rest_framework import serializers, status
+from rest_framework.decorators import api_view, permission_classes
 from rest_framework.parsers import JSONParser
 from rest_framework.permissions import IsAuthenticated
+
 from components.localisation.models import Localisation
 from components.localisation.serializers import LocalisationSerializer
+
 
 @api_view(["POST", "OPTIONS"])
 def add_localisation(request):

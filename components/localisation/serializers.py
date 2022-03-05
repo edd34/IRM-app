@@ -1,5 +1,7 @@
 from rest_framework import serializers
+
 from components.localisation.models import Localisation
+
 
 class LocalisationSerializer(serializers.ModelSerializer):
     class Meta:

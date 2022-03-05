@@ -6,20 +6,28 @@ from django.db import migrations, models
 class Migration(migrations.Migration):
 
     dependencies = [
-        ('localisation', '0001_initial'),
+        ("localisation", "0001_initial"),
     ]
 
     operations = [
         migrations.CreateModel(
-            name='Localisation',
+            name="Localisation",
             fields=[
-                ('id', models.BigAutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),
-                ('city', models.CharField(max_length=30)),
-                ('municipality', models.CharField(max_length=30)),
-                ('postalcode', models.CharField(max_length=5)),
+                (
+                    "id",
+                    models.BigAutoField(
+                        auto_created=True,
+                        primary_key=True,
+                        serialize=False,
+                        verbose_name="ID",
+                    ),
+                ),
+                ("city", models.CharField(max_length=30)),
+                ("municipality", models.CharField(max_length=30)),
+                ("postalcode", models.CharField(max_length=5)),
             ],
         ),
         migrations.DeleteModel(
-            name='AlertTable',
+            name="AlertTable",
         ),
     ]

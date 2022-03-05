@@ -1,4 +1,5 @@
 from django.db import models
+
 from components.traffic_alert.models import TrafficAlert
 
 

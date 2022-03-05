@@ -40,7 +40,7 @@ INSTALLED_APPS = [
     "components.traffic_alert",
     "components.alert_table",
     "components.localisation",
-    "components.alert_poll"
+    "components.alert_poll",
 ]
 
 MIDDLEWARE = [

@@ -6,16 +6,16 @@ from django.db import migrations
 class Migration(migrations.Migration):
 
     dependencies = [
-        ('traffic_alert', '0003_remove_trafficalert_reportbymunicipalityuser'),
+        ("traffic_alert", "0003_remove_trafficalert_reportbymunicipalityuser"),
     ]
 
     operations = [
         migrations.RemoveField(
-            model_name='trafficalert',
-            name='city',
+            model_name="trafficalert",
+            name="city",
         ),
         migrations.RemoveField(
-            model_name='trafficalert',
-            name='municipality',
+            model_name="trafficalert",
+            name="municipality",
         ),
     ]

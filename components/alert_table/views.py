@@ -10,6 +10,7 @@ from rest_framework.permissions import IsAuthenticated
 from components.alert_table.models import AlertTable
 from components.alert_table.serializers import AlertTableSerializer
 
+
 @api_view(["POST", "OPTIONS"])
 def add_alert(request):
     data = JSONParser().parse(request)

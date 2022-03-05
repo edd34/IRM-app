@@ -15,7 +15,7 @@ Data structure :
  * report_description : report description
 
 
-### a. Get all languages
+### a. Get all alert
 
 -     GET: /get-traffic-alert/
 

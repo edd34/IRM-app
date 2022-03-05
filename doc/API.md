@@ -181,6 +181,7 @@ Example of response :
 -     POST: /add-alert-table/
 
 Description : return a JSON containing all languages in the database
+
 Example : [http://localhost:8000/add-alert-table/](http://localhost:8000/add-alert-table/)
 
 Example of json body :
@@ -194,7 +195,6 @@ Example of json body :
 
 Example of response :
 ```json
-Status code : 201
 {
     "category": "Information",
     "alert_type": "Signalisation",
@@ -225,6 +225,7 @@ Description : this table will hold information about city, municipality and post
 -     GET: /get-localisations/
 
 Description : return a JSON containing all languages in the database
+
 Example : [http://localhost:8000/get-localisations/](http://localhost:8000/get-localisations/)
 
 Example of response :
@@ -250,7 +251,7 @@ Example of response :
 -     POST: /add-alert-table/
 
 Description : return a JSON containing all languages in the database
-Example : [127.0.0.1:8000/add-localisation/](127.0.0.1:8000/add-localisation/)
+Example : [http://127.0.0.1:8000/add-localisation/](http://127.0.0.1:8000/add-localisation/)
 
 Example of json body :
 ```json

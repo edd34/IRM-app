@@ -8,20 +8,15 @@ from rest_framework.parsers import JSONParser
 from rest_framework.permissions import IsAuthenticated
 
 from components.traffic_alert.models import TrafficAlert
-from components.traffic_alert.serializers import CreateTrafficAlertSerializer
+from components.traffic_alert.serializers import TrafficAlertSerializer
 
 
 @api_view(["POST", "OPTIONS"])
 def create_traffic_alert(request):
     data = JSONParser().parse(request)
-    serializer = CreateTrafficAlertSerializer(data=data)
+    serializer = TrafficAlertSerializer(data=data)
     if serializer.is_valid():
-        res = TrafficAlert.objects.create(
-            lat=serializer.data["lat"],
-            lon=serializer.data["lon"],
-            localisation_description=serializer.data["localisation_description"],
-            report_description=serializer.data["report_description"],
-        )
+        serializer.save()
         return JsonResponse(serializer.data, status=status.HTTP_201_CREATED)
     return JsonResponse(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
 
@@ -29,6 +24,6 @@ def create_traffic_alert(request):
 @api_view(["GET", "OPTIONS"])
 def get_traffic_alert(request):
     data = TrafficAlert.objects.all()
-    serializer = CreateTrafficAlertSerializer(data=data, many=True)
+    serializer = TrafficAlertSerializer(data=data, many=True)
     serializer.is_valid()
     return JsonResponse(serializer.data, safe=False)

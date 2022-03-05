@@ -15,7 +15,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n   \"lat\" : 45,\n   \"lon\" :12,\n   \"localisation\" : \"mangabandra\",\n   \"city\" : \"sada\",\n   \"municipality\" : \"sada\",\n   \"report_description\" :\"gene\"\n}",
+							"raw": "{\n   \"lat\" : 45,\n   \"lon\" :12,\n   \"localisation_description\" : \"si si\",\n   \"localisation_id\": 2,\n   \"alert_id\": 1\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -41,9 +41,16 @@
 				},
 				{
 					"name": "Get Traffic Alert",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
 					"request": {
 						"method": "GET",
 						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
 						"url": {
 							"raw": "127.0.0.1:8000/get-traffic-alert/",
 							"host": [
@@ -55,6 +62,64 @@
 							"port": "8000",
 							"path": [
 								"get-traffic-alert",
+								""
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "localisation",
+			"item": [
+				{
+					"name": "get localisation",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "127.0.0.1:8000/get-localisations/",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"get-localisations",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "add localisaiton",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"city\" : \"chiconi\",\n    \"municipality\" : \"chiconi\",\n    \"postalcode\" : \"97640\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "127.0.0.1:8000/add-localisation/",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"add-localisation",
 								""
 							]
 						}
@@ -95,7 +160,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n    \"category\":\"Information\",\n    \"alert_type\":\"Manifestation\",\n    \"alert_subtype\":\"Parking fermé\"\n}",
+							"raw": "{\n    \"category\":\"Information\",\n    \"alert_type\":\"Signalisation\",\n    \"alert_subtype\":\"Feux temporaire\"\n}",
 							"options": {
 								"raw": {
 									"language": "json"

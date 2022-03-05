@@ -19,9 +19,7 @@ def create_traffic_alert(request):
         res = TrafficAlert.objects.create(
             lat=serializer.data["lat"],
             lon=serializer.data["lon"],
-            localisation=serializer.data["localisation"],
-            city=serializer.data["city"],
-            municipality=serializer.data["municipality"],
+            localisation_description=serializer.data["localisation_description"],
             report_description=serializer.data["report_description"],
         )
         return JsonResponse(serializer.data, status=status.HTTP_201_CREATED)

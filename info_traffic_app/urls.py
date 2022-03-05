@@ -23,4 +23,5 @@ urlpatterns = [
     path("ping/", PingView.as_view()),
     path("", include("components.traffic_alert.urls")),
     path("", include("components.alert_table.urls")),
+    path("", include("components.localisation.urls")),
 ]

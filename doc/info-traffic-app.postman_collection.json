@@ -1,0 +1,125 @@
+{
+	"info": {
+		"_postman_id": "82045877-6795-4777-acbb-11677ac332d6",
+		"name": "info-traffic-app",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Traffic Alert",
+			"item": [
+				{
+					"name": "Create Traffic Alert",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n   \"lat\" : 45,\n   \"lon\" :12,\n   \"localisation\" : \"mangabandra\",\n   \"city\" : \"sada\",\n   \"municipality\" : \"sada\",\n   \"report_description\" :\"gene\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "127.0.0.1:8000/create-traffic-alert/",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"create-traffic-alert",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Traffic Alert",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "127.0.0.1:8000/get-traffic-alert/",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"get-traffic-alert",
+								""
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Alert Table",
+			"item": [
+				{
+					"name": "Get Alert Table",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "127.0.0.1:8000/get-alert-table/",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"get-alert-table",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Add Alert",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"category\":\"Information\",\n    \"alert_type\":\"Manifestation\",\n    \"alert_subtype\":\"Parking fermé\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "127.0.0.1:8000/add-alert-table/",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"add-alert-table",
+								""
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}

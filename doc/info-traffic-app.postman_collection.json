@@ -66,6 +66,137 @@
 							]
 						}
 					},
+					"response": [
+						{
+							"name": "Get Traffic Alert",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": ""
+								},
+								"url": {
+									"raw": "127.0.0.1:8000/get-traffic-alert/",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8000",
+									"path": [
+										"get-traffic-alert",
+										""
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Date",
+									"value": "Sat, 05 Mar 2022 17:07:08 GMT"
+								},
+								{
+									"key": "Server",
+									"value": "WSGIServer/0.2 CPython/3.8.10"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Vary",
+									"value": "Accept, Cookie"
+								},
+								{
+									"key": "Allow",
+									"value": "GET, OPTIONS, OPTIONS"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "DENY"
+								},
+								{
+									"key": "Content-Length",
+									"value": "2676"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "Referrer-Policy",
+									"value": "same-origin"
+								},
+								{
+									"key": "Cross-Origin-Opener-Policy",
+									"value": "same-origin"
+								}
+							],
+							"cookie": [],
+							"body": "[\n    {\n        \"UUID\": \"b3ab0f0a-41a4-422f-92ad-9e87a92e4a39\",\n        \"localisation\": {\n            \"id\": 1,\n            \"city\": \"mangajou\",\n            \"municipality\": \"sada\",\n            \"postalcode\": \"97640\"\n        },\n        \"alert\": {\n            \"id\": 1,\n            \"category\": \"Information\",\n            \"alert_type\": \"Signalisation\",\n            \"alert_subtype\": \"Feux temporaire\"\n        },\n        \"lat\": \"45.000000\",\n        \"lon\": \"12.000000\",\n        \"timestamp\": \"2022-03-05T01:15:07.576589Z\",\n        \"localisation_description\": \"mangabandra\",\n        \"report_description\": \"gene\",\n        \"localisation_id\": 1,\n        \"alert_id\": 1\n    },\n    {\n        \"UUID\": \"11633013-7695-41c8-a442-2e11a3803093\",\n        \"localisation\": {\n            \"id\": 1,\n            \"city\": \"mangajou\",\n            \"municipality\": \"sada\",\n            \"postalcode\": \"97640\"\n        },\n        \"alert\": {\n            \"id\": 1,\n            \"category\": \"Information\",\n            \"alert_type\": \"Signalisation\",\n            \"alert_subtype\": \"Feux temporaire\"\n        },\n        \"lat\": \"45.000000\",\n        \"lon\": \"12.000000\",\n        \"timestamp\": \"2022-03-05T01:18:43.014581Z\",\n        \"localisation_description\": \"mangabandra\",\n        \"report_description\": \"fzefgz\",\n        \"localisation_id\": 1,\n        \"alert_id\": 1\n    },\n    {\n        \"UUID\": \"bdbdd368-75a5-4acf-beb7-a408321c6bc6\",\n        \"localisation\": {\n            \"id\": 2,\n            \"city\": \"sada\",\n            \"municipality\": \"sada\",\n            \"postalcode\": \"97640\"\n        },\n        \"alert\": {\n            \"id\": 1,\n            \"category\": \"Information\",\n            \"alert_type\": \"Signalisation\",\n            \"alert_subtype\": \"Feux temporaire\"\n        },\n        \"lat\": \"45.000000\",\n        \"lon\": \"12.000000\",\n        \"timestamp\": \"2022-03-05T09:14:17.243490Z\",\n        \"localisation_description\": \"position\",\n        \"report_description\": \"fzefgz\",\n        \"localisation_id\": 2,\n        \"alert_id\": 1\n    },\n    {\n        \"UUID\": \"1008ad75-f979-4470-9b9b-f24349eeafb8\",\n        \"localisation\": {\n            \"id\": 2,\n            \"city\": \"sada\",\n            \"municipality\": \"sada\",\n            \"postalcode\": \"97640\"\n        },\n        \"alert\": {\n            \"id\": 1,\n            \"category\": \"Information\",\n            \"alert_type\": \"Signalisation\",\n            \"alert_subtype\": \"Feux temporaire\"\n        },\n        \"lat\": \"45.000000\",\n        \"lon\": \"12.000000\",\n        \"timestamp\": \"2022-03-05T09:21:12.286281Z\",\n        \"localisation_description\": \"ouais\",\n        \"report_description\": \"non\",\n        \"localisation_id\": 2,\n        \"alert_id\": 1\n    },\n    {\n        \"UUID\": \"1c5ed7aa-3b0c-4c8e-9b4d-fb23e661c2a1\",\n        \"localisation\": {\n            \"id\": 2,\n            \"city\": \"sada\",\n            \"municipality\": \"sada\",\n            \"postalcode\": \"97640\"\n        },\n        \"alert\": {\n            \"id\": 1,\n            \"category\": \"Information\",\n            \"alert_type\": \"Signalisation\",\n            \"alert_subtype\": \"Feux temporaire\"\n        },\n        \"lat\": \"45.000000\",\n        \"lon\": \"12.000000\",\n        \"timestamp\": \"2022-03-05T09:26:37.341159Z\",\n        \"localisation_description\": \"si si\",\n        \"report_description\": \"salt\",\n        \"localisation_id\": 2,\n        \"alert_id\": 1\n    },\n    {\n        \"UUID\": \"924811c9-db2d-456d-aed1-928d55e00daf\",\n        \"localisation\": {\n            \"id\": 2,\n            \"city\": \"sada\",\n            \"municipality\": \"sada\",\n            \"postalcode\": \"97640\"\n        },\n        \"alert\": {\n            \"id\": 1,\n            \"category\": \"Information\",\n            \"alert_type\": \"Signalisation\",\n            \"alert_subtype\": \"Feux temporaire\"\n        },\n        \"lat\": \"45.000000\",\n        \"lon\": \"12.000000\",\n        \"timestamp\": \"2022-03-05T09:41:23.577213Z\",\n        \"localisation_description\": \"si si\",\n        \"report_description\": null,\n        \"localisation_id\": 2,\n        \"alert_id\": 1\n    }\n]"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Alert Table",
+			"item": [
+				{
+					"name": "Get Alert Table",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "127.0.0.1:8000/get-alert-table/",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"get-alert-table",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Add Alert",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"category\":\"Information\",\n    \"alert_type\":\"Signalisation\",\n    \"alert_subtype\":\"Feux temporaire\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "127.0.0.1:8000/add-alert-table/",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"add-alert-table",
+								""
+							]
+						}
+					},
 					"response": []
 				}
 			]
@@ -129,38 +260,16 @@
 			]
 		},
 		{
-			"name": "Alert Table",
+			"name": "alert poll",
 			"item": [
 				{
-					"name": "Get Alert Table",
-					"request": {
-						"method": "GET",
-						"header": [],
-						"url": {
-							"raw": "127.0.0.1:8000/get-alert-table/",
-							"host": [
-								"127",
-								"0",
-								"0",
-								"1"
-							],
-							"port": "8000",
-							"path": [
-								"get-alert-table",
-								""
-							]
-						}
-					},
-					"response": []
-				},
-				{
-					"name": "Add Alert",
+					"name": "Answer Alert Poll",
 					"request": {
 						"method": "POST",
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n    \"category\":\"Information\",\n    \"alert_type\":\"Signalisation\",\n    \"alert_subtype\":\"Feux temporaire\"\n}",
+							"raw": "{\n    \"traffic_alert_id\":\"b3ab0f0a-41a4-422f-92ad-9e87a92e4a39\",\n    \"lat\":\"12\",\n    \"lon\":\"45\",\n    \"poll_result\":true\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -168,7 +277,7 @@
 							}
 						},
 						"url": {
-							"raw": "127.0.0.1:8000/add-alert-table/",
+							"raw": "127.0.0.1:8000/answer-alert-poll/",
 							"host": [
 								"127",
 								"0",
@@ -177,7 +286,7 @@
 							],
 							"port": "8000",
 							"path": [
-								"add-alert-table",
+								"answer-alert-poll",
 								""
 							]
 						}

@@ -31,9 +31,7 @@ Example of response :
         "lat": "45.000000",
         "lon": "12.000000",
         "timestamp": "2022-03-01T10:21:54.630653Z",
-        "localisation": "mangabandra",
-        "city": "sada",
-        "municipality": "sada",
+        "localisation_description": "mangabandra",
         "report_description": "gene"
     },
 ]
@@ -51,9 +49,7 @@ Example of body :
 {
    "lat" : 45,
    "lon" :12,
-   "localisation" : "mangabandra",
-   "city" : "sada",
-   "municipality" : "sada",
+   "localisation_description" : "mangabandra",
    "report_description" :"gene"
 }
 ```
@@ -63,9 +59,7 @@ Example of response :
 {
     "lat": "45.000000",
     "lon": "12.000000",
-    "localisation": "mangabandra",
-    "city": "sada",
-    "municipality": "sada",
+    "localisation_description": "mangabandra",
     "report_description": "gene"
 }
 ```

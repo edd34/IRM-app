@@ -11,11 +11,7 @@ def add_localisation(request):
     data = JSONParser().parse(request)
     serializer = LocalisationSerializer(data=data)
     if serializer.is_valid():
-        res = Localisation.objects.create(
-            city=serializer.data["city"],
-            municipality=serializer.data["municipality"],
-            postalcode=serializer.data["postalcode"],
-        )
+        serializer.save()
         return JsonResponse(serializer.data, status=status.HTTP_201_CREATED)
     return JsonResponse(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
 

@@ -48,7 +48,6 @@ Example : [http://localhost:8000/create-traffic-alert/](http://localhost:8000/cr
 
 Example of body :
 ```json
-body :
 {
    "lat" : 45,
    "lon" :12,
@@ -61,7 +60,6 @@ body :
 
 Example of response :
 ```json
-Status code : 201
 {
     "lat": "45.000000",
     "lon": "12.000000",
@@ -71,6 +69,7 @@ Status code : 201
     "report_description": "gene"
 }
 ```
+
 ## 2. Alert-Table component
 Description : this table will categorize types of alert. Front-end will use this table for getting alert type.
 

@@ -41,6 +41,7 @@ INSTALLED_APPS = [
     "components.alert_table",
     "components.localisation",
     "components.alert_poll",
+    "rest_framework",
 ]
 
 MIDDLEWARE = [

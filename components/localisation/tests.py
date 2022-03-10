@@ -1,10 +1,13 @@
 import json
+
 from django.test import Client, TestCase
 from django.urls import reverse
 from rest_framework import status
 from rest_framework.test import APIRequestFactory, APITestCase
+
 from components.localisation.models import Localisation
 from components.localisation.serializers import LocalisationSerializer
+
 
 class AccountTests(APITestCase):
     def test_add_localisation(self):

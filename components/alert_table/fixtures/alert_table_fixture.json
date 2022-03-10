@@ -1,0 +1,39 @@
+[
+    {
+        "model": "alert_table.alerttable",
+        "pk": 1,
+        "fields": {
+            "category": "Information",
+            "alert_type": "Signalisation",
+            "alert_subtype": "Feux temporaire"
+        }
+    },
+    {
+        "model": "alert_table.alerttable",
+        "pk": 2,
+        "fields": {
+            "category": "Information",
+            "alert_type": "Signalisation",
+            "alert_subtype": "Chaussée rétrécie"
+        }
+    },
+    {
+        "model": "alert_table.alerttable",
+        "pk": 3,
+        "fields": {
+            "category": "Alerte",
+            "alert_type": "Embouteillage",
+            "alert_subtype": "Intense"
+        }
+    },
+    {
+        "model": "alert_table.alerttable",
+        "pk": 4,
+        "fields": {
+            "category": "Danger",
+            "alert_type": "Aggression",
+            "alert_subtype": "Caillassage"
+        }
+    }
+    ]
+    

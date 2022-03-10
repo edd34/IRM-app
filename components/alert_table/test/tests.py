@@ -24,7 +24,6 @@ class AlertTableTests(APITestCase):
         self.assertTrue(new_alert.category == "danger")
         self.assertTrue(new_alert.alert_type == "problème sur la route")
         self.assertTrue(new_alert.alert_subtype == "nid de poule")
-        
 
     def test_get_localisation(self):
         url = "/get-alert-table/"

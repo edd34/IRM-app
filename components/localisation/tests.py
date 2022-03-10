@@ -9,7 +9,7 @@ from components.localisation.models import Localisation
 from components.localisation.serializers import LocalisationSerializer
 
 
-class AccountTests(APITestCase):
+class LocalisationTests(APITestCase):
     def test_add_localisation(self):
         count_localisation = Localisation.objects.count()
         self.assertEqual(count_localisation, 0)

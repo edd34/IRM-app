@@ -14,7 +14,11 @@ class AlertTableTests(APITestCase):
 
     def test_add_alert(self):
         url = "/add-alert-table/"
-        data = {"category": "danger", "alert_type": "problème sur la route", "alert_subtype": "nid de poule"}
+        data = {
+            "category": "danger",
+            "alert_type": "problème sur la route",
+            "alert_subtype": "nid de poule",
+        }
         self.assertTrue(AlertTable.objects.count() == 4)
         request = self.client.post(url, data=json.dumps(data), content_type="application/json")
         json_response = json.loads(request.content)

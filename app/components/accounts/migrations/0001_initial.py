@@ -16,9 +16,20 @@ class Migration(migrations.Migration):
         migrations.CreateModel(
             name="Accounts",
             fields=[
-                ("id", models.BigAutoField(auto_created=True, primary_key=True, serialize=False, verbose_name="ID")),
+                (
+                    "id",
+                    models.BigAutoField(
+                        auto_created=True,
+                        primary_key=True,
+                        serialize=False,
+                        verbose_name="ID",
+                    ),
+                ),
                 ("password", models.CharField(max_length=128, verbose_name="password")),
-                ("last_login", models.DateTimeField(blank=True, null=True, verbose_name="last login")),
+                (
+                    "last_login",
+                    models.DateTimeField(blank=True, null=True, verbose_name="last login"),
+                ),
                 (
                     "is_superuser",
                     models.BooleanField(
@@ -27,10 +38,16 @@ class Migration(migrations.Migration):
                         verbose_name="superuser status",
                     ),
                 ),
-                ("email", models.EmailField(max_length=255, unique=True, verbose_name="email address")),
+                (
+                    "email",
+                    models.EmailField(max_length=255, unique=True, verbose_name="email address"),
+                ),
                 ("is_staff", models.BooleanField(default=False)),
                 ("is_active", models.BooleanField(default=True)),
-                ("date_joined", models.DateTimeField(default=django.utils.timezone.now)),
+                (
+                    "date_joined",
+                    models.DateTimeField(default=django.utils.timezone.now),
+                ),
                 (
                     "groups",
                     models.ManyToManyField(

@@ -5,8 +5,8 @@ from django.urls import reverse
 from rest_framework import status
 from rest_framework.test import APIRequestFactory, APITestCase
 
-from components.localisation.models import Localisation
 from components.alert_table.models import AlertTable
+from components.localisation.models import Localisation
 from components.traffic_alert.models import TrafficAlert
 from components.traffic_alert.serializers import TrafficAlertSerializer
 

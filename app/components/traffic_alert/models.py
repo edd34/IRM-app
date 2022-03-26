@@ -16,3 +16,6 @@ class TrafficAlert(models.Model):
     localisation_id = models.ForeignKey(Localisation, on_delete=models.CASCADE, null=True, blank=True)
     alert_id = models.ForeignKey(AlertTable, on_delete=models.CASCADE, null=False, blank=False, default=1)
     # TODO reportByMunicipalityUser = relation to user model
+
+    def __str__(self):
+        return 'ID: {} - (lat: {}, lon:{}) - Lieu: {} - Desc:'.format(self.UUID, self.lat, self.lon, self.localisation_description, self.report_description)

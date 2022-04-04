@@ -7,9 +7,11 @@ from components.localisation.models import Localisation
 
 
 class TrafficAlert(models.Model):
-    UUID = models.UUIDField(unique=True, primary_key=True, default=uuid.uuid4, editable=False)  # make sure unique uuid
-    lat = models.DecimalField(max_digits=9, decimal_places=6)
-    lon = models.DecimalField(max_digits=9, decimal_places=6)
+    UUID = models.UUIDField(
+        unique=True, primary_key=True, default=uuid.uuid4, editable=False, auto_created=True
+    )  # make sure unique uuid
+    lat = models.DecimalField(max_digits=11, decimal_places=8)
+    lon = models.DecimalField(max_digits=11, decimal_places=8)
     timestamp = models.DateTimeField(auto_now=True)
     localisation_description = models.CharField(max_length=150, blank=True, null=True)
     report_description = models.CharField(max_length=150, blank=True, null=True)  # string : optional
@@ -18,4 +20,6 @@ class TrafficAlert(models.Model):
     # TODO reportByMunicipalityUser = relation to user model
 
     def __str__(self):
-        return 'ID: {} - (lat: {}, lon:{}) - Lieu: {} - Desc:'.format(self.UUID, self.lat, self.lon, self.localisation_description, self.report_description)
+        return "ID: {} - (lat: {}, lon:{}) - Lieu: {} - Desc:".format(
+            self.UUID, self.lat, self.lon, self.localisation_description, self.report_description
+        )

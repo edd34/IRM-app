@@ -56,7 +56,7 @@ Nous allons avoir un gros bouton sur le côté bas de la carte qui permet de raj
 
 La position GPS, l'horodatage et l'ID de l'incident sont envoyés au backend.
 
-## Feature 3 : notification push et fonctionnement en tant que service (à venir, important, pas urgent)
+## Feature 3 : notification push et fonctionnement en tant que service (à venir, nice to have, pas urgent)
 C'est une feature qu'il faudra explorer. Nous aurons besoins de cette fonctionnalité pour alerte d'un incident grâce qui nécessite au conducteur de rebrousser chemin.
 
 ## Feature 4 : voter pour contribuer à vérifier une information
@@ -69,8 +69,10 @@ Nous utiliserons un système de vote pour vérifier les informations et donner u
 |3 |Peut-être que non|
 |5 |Non|
 
+## Feature 5 (se connecter / s'inscrire)
+L'utilisateur doit s'inscrire afin de pouvoir signaler des incidents sur la route ou 
 
-**Feature à venir :** Feature 5 (se connecter / s'inscrire), Feature 6 (Paramètres), Feature 7 (Mon profil)
+**Feature à venir :** , Feature 6 (Paramètres), Feature 7 (Mon profil)
 
 ---
 

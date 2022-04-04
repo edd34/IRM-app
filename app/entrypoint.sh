@@ -10,8 +10,15 @@ then
 
     echo "PostgreSQL started"
 fi
-python manage.py collectstatic
+
+if [ ! -d ./staticfiles ]
+then
+    mkdir staticfiles
+fi
+
+python manage.py collectstatic --no-input
 python manage.py flush --no-input
 python manage.py migrate
+python3 manage.py init_alerte_table
 
 exec "$@"

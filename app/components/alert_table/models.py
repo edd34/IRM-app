@@ -8,4 +8,4 @@ class AlertTable(models.Model):
     alert_subtype = models.CharField(max_length=30)
 
     def __str__(self):
-        return '{} - {} - {}'.format(self.category, self.alert_type, self.alert_subtype)
+        return "{} - {} - {}".format(self.category, self.alert_type, self.alert_subtype)

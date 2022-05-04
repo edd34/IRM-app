@@ -6,18 +6,18 @@ from django.db import migrations, models
 class Migration(migrations.Migration):
 
     dependencies = [
-        ('alert_poll', '0001_initial'),
+        ("alert_poll", "0001_initial"),
     ]
 
     operations = [
         migrations.AlterField(
-            model_name='alertpoll',
-            name='lat',
+            model_name="alertpoll",
+            name="lat",
             field=models.DecimalField(decimal_places=8, max_digits=9),
         ),
         migrations.AlterField(
-            model_name='alertpoll',
-            name='lon',
+            model_name="alertpoll",
+            name="lon",
             field=models.DecimalField(decimal_places=8, max_digits=9),
         ),
     ]

@@ -7,13 +7,15 @@ import uuid
 class Migration(migrations.Migration):
 
     dependencies = [
-        ('traffic_alert', '0009_alter_trafficalert_lat_alter_trafficalert_lon'),
+        ("traffic_alert", "0009_alter_trafficalert_lat_alter_trafficalert_lon"),
     ]
 
     operations = [
         migrations.AlterField(
-            model_name='trafficalert',
-            name='UUID',
-            field=models.UUIDField(auto_created=True, default=uuid.uuid4, editable=False, primary_key=True, serialize=False, unique=True),
+            model_name="trafficalert",
+            name="UUID",
+            field=models.UUIDField(
+                auto_created=True, default=uuid.uuid4, editable=False, primary_key=True, serialize=False, unique=True
+            ),
         ),
     ]

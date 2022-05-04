@@ -6,18 +6,18 @@ from django.db import migrations, models
 class Migration(migrations.Migration):
 
     dependencies = [
-        ('traffic_alert', '0007_trafficalert_alert_id'),
+        ("traffic_alert", "0007_trafficalert_alert_id"),
     ]
 
     operations = [
         migrations.AlterField(
-            model_name='trafficalert',
-            name='lat',
+            model_name="trafficalert",
+            name="lat",
             field=models.DecimalField(decimal_places=8, max_digits=9),
         ),
         migrations.AlterField(
-            model_name='trafficalert',
-            name='lon',
+            model_name="trafficalert",
+            name="lon",
             field=models.DecimalField(decimal_places=8, max_digits=9),
         ),
     ]

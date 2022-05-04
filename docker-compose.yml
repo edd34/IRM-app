@@ -12,6 +12,12 @@ services:
       - ./.env.dev
     depends_on:
       - db
+    networks:
+      - backend-net
+    environment:
+      - POSTGRES_USER=hello_django
+      - POSTGRES_PASSWORD=hello_django
+      - POSTGRES_DB=hello_django_dev
   db:
     image: postgres:13.0-alpine
     volumes:
@@ -20,6 +26,12 @@ services:
       - POSTGRES_USER=hello_django
       - POSTGRES_PASSWORD=hello_django
       - POSTGRES_DB=hello_django_dev
+    networks:
+      - backend-net
+
+networks:
+  backend-net:
+    external: true
 
 volumes:
   postgres_data:
